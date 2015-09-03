@@ -1,0 +1,827 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.g7190305.dragdropdemo.CrossWordActivity"
+    android:id="@+id/Moveable"
+    android:background="@color/MainBackgroundColor">
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="A"
+        android:id="@+id/tvA"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:textSize="26dp"
+        android:background="@mipmap/letter_blue1"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#f2f2f2"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:textStyle="bold"
+        android:layout_above="@+id/tvZ"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="3dp" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="B"
+        android:id="@+id/tvB"
+        android:textSize="26dp"
+        android:background="@mipmap/letter_blue1"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#f2f2f2"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/tvZ"
+        android:layout_toRightOf="@+id/tvV" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="C"
+        android:id="@+id/tvC"
+        android:textSize="26dp"
+        android:background="@mipmap/letter_blue1"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#f2f2f2"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/tvZ"
+        android:layout_toRightOf="@+id/tvX" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="D"
+        android:id="@+id/tvD"
+        android:textSize="26dp"
+        android:background="@mipmap/letter_blue1"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#f2f2f2"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/tvA"
+        android:layout_toRightOf="@+id/tvS" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="E"
+        android:id="@+id/tvE"
+        android:textSize="26dp"
+        android:background="@mipmap/letter_blue1"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#f2f2f2"
+        android:layout_toEndOf="@+id/tvD"
+        android:layout_marginLeft="1dp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/tvQ"
+        android:layout_toRightOf="@+id/tvW" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="F"
+        android:id="@+id/tvF"
+        android:textSize="26dp"
+        android:background="@mipmap/letter_blue1"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#f2f2f2"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/tvA"
+        android:layout_toRightOf="@+id/tvD" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="G"
+        android:id="@+id/tvG"
+        android:textSize="26dp"
+        android:background="@mipmap/letter_blue1"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#f2f2f2"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/tvA"
+        android:layout_toRightOf="@+id/tvF" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="H"
+        android:id="@+id/tvH"
+        android:textSize="26dp"
+        android:background="@mipmap/letter_blue1"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#f2f2f2"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/tvA"
+        android:layout_toRightOf="@+id/tvG" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="I"
+        android:id="@+id/tvI"
+        android:textSize="26dp"
+        android:background="@mipmap/letter_blue1"
+        android:autoText="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#f2f2f2"
+        android:layout_alignParentBottom="false"
+        android:layout_marginLeft="1dp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/tvQ"
+        android:layout_toRightOf="@+id/tvU" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="J"
+        android:id="@+id/tvJ"
+        android:textSize="26dp"
+        android:background="@mipmap/letter_blue1"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#f2f2f2"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/tvA"
+        android:layout_toRightOf="@+id/tvH"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="K"
+        android:id="@+id/tvK"
+        android:textSize="26dp"
+        android:background="@mipmap/letter_blue1"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#f2f2f2"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/tvA"
+        android:layout_toRightOf="@+id/tvJ"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="L"
+        android:id="@+id/tvL"
+        android:textSize="26dp"
+        android:background="@mipmap/letter_blue1"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#f2f2f2"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="false"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@+id/tvA"
+        android:layout_toRightOf="@+id/tvK" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="M"
+        android:id="@+id/tvM"
+        android:textSize="26dp"
+        android:background="@mipmap/letter_blue1"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#f2f2f2"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@+id/tvZ"
+        android:layout_toRightOf="@+id/tvN" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="N"
+        android:id="@+id/tvN"
+        android:textSize="26dp"
+        android:background="@mipmap/letter_blue1"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#f2f2f2"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/tvZ"
+        android:layout_toRightOf="@+id/tvB"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="O"
+        android:id="@+id/tvO"
+        android:textSize="26dp"
+        android:background="@mipmap/letter_blue1"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#f2f2f2"
+        android:textStyle="bold"
+        android:layout_marginLeft="1dp"
+        android:layout_alignTop="@+id/tvQ"
+        android:layout_toRightOf="@+id/tvI" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="P"
+        android:id="@+id/tvP"
+        android:textSize="26dp"
+        android:background="@mipmap/letter_blue1"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#f2f2f2"
+        android:textStyle="bold"
+        android:layout_marginLeft="1dp"
+        android:layout_alignTop="@+id/tvQ"
+        android:layout_toRightOf="@+id/tvO" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="Q"
+        android:id="@+id/tvQ"
+        android:textSize="26dp"
+        android:background="@mipmap/letter_blue1"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#f2f2f2"
+        android:textStyle="bold"
+        android:layout_above="@+id/tvA"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="1dp" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="R"
+        android:id="@+id/tvR"
+        android:textSize="26dp"
+        android:background="@mipmap/letter_blue1"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#f2f2f2"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/tvQ"
+        android:layout_toRightOf="@+id/tvE"
+        android:layout_marginLeft="1dp" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="S"
+        android:id="@+id/tvS"
+        android:textSize="26dp"
+        android:background="@mipmap/letter_blue1"
+        android:autoText="false"
+        android:textColor="#f2f2f2"
+        android:inputType="none"
+        android:textAlignment="gravity"
+        android:singleLine="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:elegantTextHeight="false"
+        android:height="35dp"
+        android:width="35dp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/tvA"
+        android:layout_toRightOf="@+id/tvA"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="V"
+        android:id="@+id/tvV"
+        android:textSize="26dp"
+        android:background="@mipmap/letter_blue1"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#f2f2f2"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/tvZ"
+        android:layout_toRightOf="@+id/tvC"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="W"
+        android:id="@+id/tvW"
+        android:textSize="26dp"
+        android:background="@mipmap/letter_blue1"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#f2f2f2"
+        android:textStyle="bold"
+        android:layout_marginLeft="1dp"
+        android:layout_alignTop="@+id/tvQ"
+        android:layout_toRightOf="@+id/tvQ" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="X"
+        android:id="@+id/tvX"
+        android:textSize="26dp"
+        android:background="@mipmap/letter_blue1"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#f2f2f2"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/tvZ"
+        android:layout_toRightOf="@+id/tvZ"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="Y"
+        android:id="@+id/tvY"
+        android:textSize="26dp"
+        android:background="@mipmap/letter_blue1"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#f2f2f2"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/tvQ"
+        android:layout_toRightOf="@+id/tvT"
+        android:layout_marginLeft="1dp" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="Z"
+        android:id="@+id/tvZ"
+        android:textSize="26dp"
+        android:background="@mipmap/letter_blue1"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#f2f2f2"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="25dp" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="T"
+        android:id="@+id/tvT"
+        android:textSize="26dp"
+        android:background="@mipmap/letter_blue1"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#f2f2f2"
+        android:textStyle="bold"
+        android:layout_marginLeft="1dp"
+        android:layout_alignTop="@+id/tvQ"
+        android:layout_toRightOf="@+id/tvR" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="U"
+        android:id="@+id/tvU"
+        android:textSize="26dp"
+        android:background="@mipmap/letter_blue1"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#f2f2f2"
+        android:textAlignment="gravity"
+        android:textStyle="bold"
+        android:layout_marginLeft="1dp"
+        android:layout_alignTop="@+id/tvQ"
+        android:layout_toRightOf="@+id/tvY" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/question_mark"
+        android:id="@+id/tvResult3"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@mipmap/letter_question"
+        android:textSize="26dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignTop="@+id/tvResult1"
+        android:textStyle="bold"
+        android:textColor="#f2f2f2"
+        android:layout_toRightOf="@+id/tvResult2"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/question_mark"
+        android:id="@+id/tvResult4"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@mipmap/letter_question"
+        android:textSize="26dp"
+        android:layout_alignTop="@+id/tvResult1"
+        android:textStyle="bold"
+        android:textColor="#f2f2f2"
+        android:layout_toRightOf="@+id/tvResult3"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/question_mark"
+        android:id="@+id/tvResult2"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@mipmap/letter_question"
+        android:textSize="26dp"
+        android:layout_alignTop="@+id/tvResult1"
+        android:textStyle="bold"
+        android:textColor="#f2f2f2"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tvResult1" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/question_mark"
+        android:id="@+id/tvResult1"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@mipmap/letter_question"
+        android:textSize="26dp"
+        android:layout_marginTop="157dp"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textColor="#f2f2f2"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/question_mark"
+        android:id="@+id/tvResult5"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@mipmap/letter_question"
+        android:textSize="26dp"
+        android:layout_alignTop="@+id/tvResult1"
+        android:textStyle="bold"
+        android:textColor="#f2f2f2"
+        android:layout_toRightOf="@+id/tvResult4"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hint:"
+        android:id="@+id/tvHintTitle"
+        android:layout_below="@+id/tvResult48"
+        android:layout_toLeftOf="@+id/tvC"
+        android:layout_toStartOf="@+id/tvC" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="雅虎"
+        android:id="@+id/tvHint"
+        android:layout_centerVertical="true"
+        android:layout_alignTop="@+id/tvHintTitle"
+        android:layout_alignBottom="@+id/tvHintTitle"
+        android:layout_toRightOf="@+id/tvHintTitle"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/question_mark"
+        android:id="@+id/tvResult6"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@mipmap/letter_question"
+        android:textSize="26dp"
+        android:layout_alignTop="@+id/tvResult1"
+        android:textStyle="bold"
+        android:textColor="#f2f2f2"
+        android:layout_toRightOf="@+id/tvResult5"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/question_mark"
+        android:id="@+id/tvResult7"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@mipmap/letter_question"
+        android:textSize="26dp"
+        android:layout_alignTop="@+id/tvResult1"
+        android:textStyle="bold"
+        android:textColor="#f2f2f2"
+        android:layout_toRightOf="@+id/tvResult6"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/question_mark"
+        android:id="@+id/tvResult8"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@mipmap/letter_question"
+        android:textSize="26dp"
+        android:layout_alignTop="@+id/tvResult1"
+        android:textStyle="bold"
+        android:textColor="#f2f2f2"
+        android:layout_toRightOf="@+id/tvResult7"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/question_mark"
+        android:id="@+id/tvResult9"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@mipmap/letter_question"
+        android:textSize="26dp"
+        android:layout_alignTop="@+id/tvResult1"
+        android:textStyle="bold"
+        android:textColor="#f2f2f2"
+        android:layout_toRightOf="@+id/tvResult8"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/question_mark"
+        android:id="@+id/tvResult44"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@mipmap/letter_question"
+        android:textSize="26dp"
+        android:layout_above="@+id/tvResult4"
+        android:layout_alignLeft="@+id/tvResult4"
+        android:layout_alignStart="@+id/tvResult4"
+        android:layout_marginBottom="2dp"
+        android:textStyle="bold"
+        android:textColor="#f2f2f2" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/question_mark"
+        android:id="@+id/tvResult43"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@mipmap/letter_question"
+        android:textSize="26dp"
+        android:layout_above="@+id/tvResult44"
+        android:layout_alignLeft="@+id/tvResult4"
+        android:layout_alignStart="@+id/tvResult44"
+        android:layout_marginBottom="2dp"
+        android:textStyle="bold"
+        android:textColor="#f2f2f2" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/question_mark"
+        android:id="@+id/tvResult42"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@mipmap/letter_question"
+        android:textSize="26dp"
+        android:layout_above="@+id/tvResult43"
+        android:layout_alignLeft="@+id/tvResult4"
+        android:layout_alignStart="@+id/tvResult43"
+        android:layout_marginBottom="2dp"
+        android:textStyle="bold"
+        android:textColor="#f2f2f2" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/question_mark"
+        android:id="@+id/tvResult41"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@mipmap/letter_question"
+        android:textSize="26dp"
+        android:layout_above="@+id/tvResult42"
+        android:layout_alignLeft="@+id/tvResult4"
+        android:layout_marginBottom="2dp"
+        android:textStyle="bold"
+        android:textColor="#f2f2f2" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/question_mark"
+        android:id="@+id/tvResult45"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@mipmap/letter_question"
+        android:textSize="26dp"
+        android:layout_below="@+id/tvResult4"
+        android:layout_alignLeft="@+id/tvResult4"
+        android:layout_alignStart="@+id/tvResult4"
+        android:layout_marginTop="2dp"
+        android:textStyle="bold"
+        android:textColor="#f2f2f2" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/question_mark"
+        android:id="@+id/tvResult46"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@mipmap/letter_question"
+        android:textSize="26dp"
+        android:layout_below="@+id/tvResult45"
+        android:layout_alignLeft="@+id/tvResult4"
+        android:layout_alignStart="@+id/tvResult45"
+        android:layout_marginTop="2dp"
+        android:textStyle="bold"
+        android:textColor="#f2f2f2" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/question_mark"
+        android:id="@+id/tvResult47"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@mipmap/letter_question"
+        android:textSize="26dp"
+        android:layout_below="@+id/tvResult46"
+        android:layout_alignLeft="@+id/tvResult4"
+        android:layout_alignStart="@+id/tvResult46"
+        android:layout_marginTop="2dp"
+        android:textStyle="bold"
+        android:textColor="#f2f2f2" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/question_mark"
+        android:id="@+id/tvResult48"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@mipmap/letter_question"
+        android:textSize="26dp"
+        android:layout_below="@+id/tvResult47"
+        android:layout_alignLeft="@+id/tvResult4"
+        android:layout_alignStart="@+id/tvResult47"
+        android:layout_marginTop="2dp"
+        android:textStyle="bold"
+        android:textColor="#f2f2f2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="雅虎"
+        android:id="@+id/tvHint2"
+        android:layout_below="@+id/tvHint"
+        android:layout_alignLeft="@+id/tvHint" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/question_mark"
+        android:id="@+id/tvResult71"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@mipmap/letter_question"
+        android:textSize="26dp"
+        android:layout_alignTop="@+id/tvResult41"
+        android:layout_alignLeft="@+id/tvResult7"
+        android:textStyle="bold"
+        android:textColor="#f2f2f2" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/question_mark"
+        android:id="@+id/tvResult72"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@mipmap/letter_question"
+        android:textSize="26dp"
+        android:layout_alignTop="@+id/tvResult42"
+        android:layout_alignLeft="@+id/tvResult7"
+        android:layout_alignStart="@+id/tvResult71"
+        android:textStyle="bold"
+        android:textColor="#f2f2f2" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/question_mark"
+        android:id="@+id/tvResult73"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@mipmap/letter_question"
+        android:textSize="26dp"
+        android:layout_alignTop="@+id/tvResult43"
+        android:layout_alignLeft="@+id/tvResult7"
+        android:textStyle="bold"
+        android:textColor="#f2f2f2" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/question_mark"
+        android:id="@+id/tvResult74"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@mipmap/letter_question"
+        android:textSize="26dp"
+        android:layout_alignLeft="@+id/tvResult7"
+        android:layout_alignStart="@+id/tvResult7"
+        android:layout_alignTop="@+id/tvResult44"
+        android:textStyle="bold"
+        android:textColor="#f2f2f2" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/question_mark"
+        android:id="@+id/tvResult75"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@mipmap/letter_question"
+        android:textSize="26dp"
+        android:layout_alignTop="@+id/tvResult45"
+        android:layout_alignLeft="@+id/tvResult7"
+        android:layout_alignStart="@+id/tvResult7"
+        android:textStyle="bold"
+        android:textColor="#f2f2f2" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/question_mark"
+        android:id="@+id/tvResult76"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@mipmap/letter_question"
+        android:textSize="26dp"
+        android:layout_alignTop="@+id/tvResult46"
+        android:layout_alignLeft="@+id/tvResult7"
+        android:layout_alignStart="@+id/tvResult75"
+        android:textStyle="bold"
+        android:textColor="#f2f2f2" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/question_mark"
+        android:id="@+id/tvResult77"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@mipmap/letter_question"
+        android:textSize="26dp"
+        android:layout_alignTop="@+id/tvResult47"
+        android:layout_alignLeft="@+id/tvResult7"
+        android:layout_alignStart="@+id/tvResult73"
+        android:textStyle="bold"
+        android:textColor="#f2f2f2" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/question_mark"
+        android:id="@+id/tvResult78"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@mipmap/letter_question"
+        android:textSize="26dp"
+        android:layout_alignTop="@+id/tvResult48"
+        android:layout_alignLeft="@+id/tvResult7"
+        android:layout_alignStart="@+id/tvResult77"
+        android:textStyle="bold"
+        android:textColor="#f2f2f2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="雅虎"
+        android:id="@+id/tvHint3"
+        android:layout_alignLeft="@+id/tvHint"
+        android:layout_alignStart="@+id/tvW"
+        android:layout_below="@+id/tvHint2" />
+
+    <TextView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="@string/action_get_answer"
+        android:id="@+id/tvAnswer"
+        android:textSize="26dp"
+        android:background="@mipmap/letter_blue1"
+        android:autoText="false"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="#f2f2f2"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/tvM"
+        android:layout_marginLeft="5dp"
+        android:layout_alignTop="@+id/tvZ"
+        android:onClick="getAnswer" />
+
+</RelativeLayout>

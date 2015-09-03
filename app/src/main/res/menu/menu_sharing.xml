@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.hermitfang.socialdictionary.activities.SharingActivity">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:onClick="showHomeSearch"
+        app:showAsAction="ifRoom"
+        android:title="Dictionary"/>
+
+    <item
+        android:id="@+id/game"
+        app:showAsAction="ifRoom"
+        android:onClick="showGame"
+        android:icon="@drawable/ic_action_game"
+        android:title="Game" />
+</menu>

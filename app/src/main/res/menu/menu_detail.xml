@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.hermitfang.socialdictionary.activities.DetailActivity">
+    <!--
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+    -->
+
+    <item
+        android:id="@+id/dictionary"
+        android:icon="@drawable/ic_home"
+        android:onClick="showDictionaryQuery"
+        app:showAsAction="ifRoom"
+        android:title="Dictionary"/>
+
+    <item
+        android:id="@+id/wordList"
+        android:icon="@drawable/ic_action_wordlist"
+        android:onClick="showWordList"
+        app:showAsAction="ifRoom"
+        android:title="Word List"/>
+
+    <item
+        android:id="@+id/addToWordList"
+        android:icon="@drawable/ic_action_add"
+        android:onClick="addToWordList"
+        app:showAsAction="ifRoom"
+        android:title="Add to Word List"/>
+
+</menu>

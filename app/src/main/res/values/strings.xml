@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Social Dictionary</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_word_list">My Word List</string>
+    <string name="title_activity_game">Cross word Game</string>
+    <string name="title_activity_detail">Query Result</string>
+    <string name="title_activity_add_to_word_list">AddToWordListActivity</string>
+
+    <string name="dialog_add_to_wordlist">Add to Word List</string>
+    <string name="dialog_remove_from_wordlist">Remove from Word List</string>
+    <string name="dialog_add_this_into_wordlist">Add this word into your own word list ?</string>
+    <string name="dialog_remove_this_from_wordlist">Remove this word from your word list ?</string>
+    <string name="dialog_yes">Yes</string>
+    <string name="dialog_no">No</string>
+
+    <string name="question_mark">\?</string>
+    <string name="action_question">question</string>
+    <string name="action_game_share_title">action_game_share_title</string>
+    <string name="action_share_game_success">Share your success to Tumblr ?</string>
+
+    <!-- from cloeliu -->
+    <string name="title_activity_login">Connect to Tumblr</string>
+    <string name="title_activity_sharing">Share on Tumblr</string>
+    <string name="login_label">Log in to Tumblr</string>
+    <string name="tv_sharing_info">Share with your friends:</string>
+    <string name="btn_post">Post on Tumblr!</string>
+    <string name="tv_sharing_hint">say something...</string>
+    <string name="action_get_answer">\@</string>
+</resources>
